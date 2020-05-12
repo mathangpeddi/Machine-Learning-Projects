@@ -1,0 +1,22 @@
+False positive and false negatives:
+True postive:Our prediction is true and its actually true
+True negative:Our prediction is false and its actually false
+False postiive:Our prediction is true and its actually false
+False negative:Our prediction is false and its actually true
+We take a curve and if the value is greater than 0.5 then we project it upwards onto the y=1 line(above live),if the value is negative then we project is onto the y=0 line(below line)
+
+Confusion Matrix:
+We plot all these as a matrix and then compare the no of correct and incorrect predictions.
+Then we calculate the accuracy(no of correct predictions/no oftotal predictions) and the error rate(no of incorrect predictions/no of total predictions)
+There is an accuracy paradox: If we dont predict anything then the accuracy increases(an example given)but its not correct because if we dont predict anything how can the accuracy increase? This is wrong
+
+CAP:Cumulative Accuracy Profile
+First we plot a graph against purchased and total contacted
+Suppose 10% of the total people contacted purchase,then suppose if 1,00,000 people are contacted and 1,00,00 people purchase,so if 2,00,000 contacted then 2,00,00 purchased and 4,00,000 contacted then 4,00,00 purchased 
+So if we plot a curve we get a straight line passing through the origin,suppose we want to increase the no of people purchased by not randomly selecting people but selecting people by our choice.We get to know who all use mobile phones and who all purchase based on their previous history.
+So we plot different different graphs.If the area between this curve and the straight line is more then the model is better.So more is the area better is the model.Here its fixed that only 10,000 are going to purchase and not more than that.
+So we contact only those who have a good probability of purchasing and then we plot one more graph,the best graph is when we invite 10,00,00 people and all the first 10,000 people purchase which means anyways 10% of the people i.e.10,000 are going to purchase so if strating 10,000 people purchase then the at some point the graph becomes straight and the area will be more so better is the model-infact this model will be the best model
+
+CAP curve analysis:
+The straight line passing through the origin is the random model and then different models.
+If any curve lies below the random model then our model is a very bad model.If the accuracy is between 90 to 100 then the model could have forward looking variables.We have to take care of overfitting also(we can avoid overfitting by regularization)
