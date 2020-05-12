@@ -1,0 +1,2 @@
+So this is the famous unsupervised learning algorithm which is the K-means clustering algorithm.So I have taken a real-world Mall Customers dataset and have done analysis and segregated the customers into different clusters.
+So this is basically the customer segmentation for the Mall Customers dataset where we divide seperate the customers into different clusters based on their Annual Income and spending score.
