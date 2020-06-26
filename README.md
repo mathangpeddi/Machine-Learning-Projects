@@ -42,8 +42,3 @@
    </ul>
    </ul>
    
-# Neural Networks
-<ul>
-    <li>Artifical Neural Networks</li>
-    <li>Convoluitonal Neural Networks</li>
-</ul>
