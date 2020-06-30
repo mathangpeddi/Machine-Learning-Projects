@@ -29,19 +29,21 @@
  Out of all the models,the best classifier is the kernel SVM because it showed a smooth curve and properly differentiated the red and the green regions. The linear classifier was not so good,the random forest and decision tree are having many irregularities. So considering the accuracy and the plot, the kernel SVM was the best fit/classifier for this business problem.
    
 # Unsupervised Learning
+This dataset is made by the strategic team of the mall and they have collected soe data about their customers.Each row corresponds to the customer of the mall having various attributes such as CustomerID,Gender,Age,Annual Income and Spending Score.Spending Score is a metric made by a mall to measure how uch each customer spends.Lower the score the lesser the customer spends and higher the score the more the customer spends and this takes values from 1 to 100. So the team wants to identify some patterns within its customers. So we need to create a dependent variable which contains the classes of all these customers.
    <ul>
      <li>Clustering</li>
     <ul style="list-style-type:circle">
          <li>K Means Clustering</li>
          <li>Hierarchial Clustering</li>
-         <li>DBSCAN Clustering</li>
    </ul>
    </ul>
-   <ul>
-     <li>Dimensionality Reduction</li>
-    <ul style="list-style-type:circle">
-         <li>Principal Component Analysis (PCA)</li>
-         <li>Linear Discriminant Analysis (LDA)</li>
-   </ul>
-   </ul>
-   
+
+
+# Dimensionality Reduction
+So here I have chosen the Wine dataset.There are 13 columns-independent variables and only one dependent variable,so the business owner-suppose if he takes a new obs then he shud be able to predict the customer segment(to which category he belongs to),the owner can recommend the new wine to the right customers.For each new wine it tells us to which customer segment it will be more appropriate.Here I have built a logistic regression model for prediction,but to see the visualizations there are 13 dimensions and they cannot be visualized. So we need to apply dimensionality reduction techniques and reduce the dataset to a lower number of features. Mainly we need to reduce the dimensions and provide a simple dataset which can give excellent correlations and which when applied to a logistic regression model gives accurate results.
+<ul>
+    <li>Principal Component Analysis</li>
+   This is an unsupervised machine learning algorithm.
+    <li>Linear Discriminant Analysis</li>
+   This is a supervised machine learning algorithm.
+</ul>
